@@ -12,7 +12,7 @@
  * @package underscores_parcel
  */
 
-get_header();
+include 'header_normal.php';
 ?>
 
 	<main id="primary" class="site-main">
