@@ -269,12 +269,8 @@ table {
   margin: 0 0 1.5em;
 }
 
-a {
-  color: #000;
-}
-
-a:visited {
-  color: purple;
+a, a:visited {
+  color: #6a5acd;
 }
 
 a:hover, a:focus, a:active {
@@ -308,6 +304,7 @@ button:active, button:focus, input[type="button"]:active, input[type="button"]:f
 }
 
 input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="number"], input[type="tel"], input[type="range"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"], textarea {
+  width: 100%;
   color: #666;
   border: 1px solid #ccc;
   border-radius: 3px;
@@ -574,13 +571,34 @@ a:focus-visible {
   line-height: 1;
 }
 
+.content__item-heading .estracto {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .content__item-heading {
+    font-size: 5vw;
+  }
+
+  .content__item-heading .estracto {
+    display: block;
+  }
+}
+
 .content__item-text {
   max-width: 30ch;
   margin-bottom: 2rem;
 }
 
+@media (max-width: 767px) {
+  .content__item-text {
+    display: none;
+  }
+}
+
 .content__item-link {
   cursor: pointer;
+  font-size: 1.4rem;
 }
 
 .slide-nav {
@@ -771,83 +789,100 @@ a:focus-visible {
   }
 }
 
-.main-navigation {
-  width: 100%;
-  display: block;
+.page .site {
+  padding: 8vh;
 }
 
-.main-navigation ul {
-  margin: 0;
-  padding-left: 0;
-  list-style: none;
-  display: none;
-}
-
-.main-navigation ul ul {
-  float: left;
-  z-index: 99999;
-  position: absolute;
-  top: 100%;
-  left: -999em;
-  box-shadow: 0 3px 3px #0003;
-}
-
-.main-navigation ul ul ul {
-  top: 0;
-  left: -999em;
-}
-
-.main-navigation ul ul li:hover > ul, .main-navigation ul ul li.focus > ul {
-  display: block;
-  left: auto;
-}
-
-.main-navigation ul ul a {
-  width: 200px;
-}
-
-.main-navigation ul li:hover > ul, .main-navigation ul li.focus > ul {
-  left: auto;
-}
-
-.main-navigation li {
-  position: relative;
-}
-
-.main-navigation a {
-  text-decoration: none;
-  display: block;
-}
-
-.menu-toggle, .main-navigation.toggled ul {
-  display: block;
-}
-
-@media screen and (min-width: 37.5em) {
-  .menu-toggle {
-    display: none;
-  }
-
-  .main-navigation ul {
-    display: flex;
-  }
-}
-
-.site-main .comment-navigation, .site-main .posts-navigation, .site-main .post-navigation {
-  margin: 0 0 1.5em;
-}
-
-.comment-navigation .nav-links, .posts-navigation .nav-links, .post-navigation .nav-links {
+.page .site .site-header {
+  margin-bottom: 40px;
   display: flex;
 }
 
-.comment-navigation .nav-previous, .posts-navigation .nav-previous, .post-navigation .nav-previous {
-  flex: 1 0 50%;
+.page .site .site-header .site-branding a {
+  margin-right: 40px;
 }
 
-.comment-navigation .nav-next, .posts-navigation .nav-next, .post-navigation .nav-next {
-  text-align: end;
-  flex: 1 0 50%;
+.page .site .site-header .site-branding a img {
+  width: 150px;
+  height: auto;
+}
+
+@media (max-width: 767px) {
+  .page .site .site-header .site-branding a img {
+    width: 100px;
+  }
+}
+
+.page .site .site-header .navigation-pages .menu-menu-1-container .menu {
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.page .site .site-header .navigation-pages .menu-menu-1-container .menu li {
+  margin: 15px 20px 15px 15px;
+  list-style: none;
+}
+
+@media (max-width: 767px) {
+  .page .site .site-header .navigation-pages .menu-menu-1-container .menu li {
+    margin: 10px 0;
+  }
+}
+
+.page .site .site-header .navigation-pages .menu-menu-1-container .menu li a {
+  color: #32cd32;
+}
+
+.home main {
+  height: 90vh;
+}
+
+.home .site-footer {
+  height: 10vh;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 8vw;
+  display: flex;
+}
+
+.home .site-header .site-branding a {
+  margin-right: 40px;
+}
+
+.home .site-header .site-branding a img {
+  width: 150px;
+  height: auto;
+}
+
+@media (max-width: 767px) {
+  .home .site-header .site-branding a img {
+    width: 100px;
+  }
+}
+
+.home .main-navigation .menu-menu-1-container .menu {
+  flex-direction: column;
+  margin: 15px 0 0;
+  padding: 0;
+  display: flex;
+}
+
+.home .main-navigation .menu-menu-1-container .menu li {
+  margin: 15px 20px 15px 15px;
+  list-style: none;
+}
+
+@media (max-width: 767px) {
+  .home .main-navigation .menu-menu-1-container .menu li {
+    margin: 10px 0;
+  }
+}
+
+.home .main-navigation .menu-menu-1-container .menu li a {
+  color: #3cb371;
 }
 
 .sticky {

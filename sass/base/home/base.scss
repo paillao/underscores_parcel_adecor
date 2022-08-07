@@ -257,15 +257,37 @@ a:focus-visible {
   line-height: 1;
   margin: 1rem 0 3rem 0;
   font-weight: 600;
+  .estracto {
+    display: none;
+  }
+  @media #{$tablet} {
+  }
+  @media #{$mobile} {
+    font-size: 5vw;
+    .estracto {
+      display: block;
+    }
+  }
 }
 
 .content__item-text {
   max-width: 30ch;
   margin-bottom: 2rem;
+  @media #{$tablet} {
+  }
+  @media #{$mobile} {
+    display: none;
+  }
 }
 
 .content__item-link {
   cursor: pointer;
+  // border: 1px solid SlateBlue;
+  // text-align: center;
+  // padding: 10px;
+  // width: 100px;
+  // border-radius: 20px;
+  font-size: 1.4rem;
 }
 
 .slide-nav {

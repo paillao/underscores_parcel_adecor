@@ -11,7 +11,9 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
-	
+	<div class="site-info">
+          <a href="https://paillao.com" target="_blank">©2022 @paillao</a>		  
+    </div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
