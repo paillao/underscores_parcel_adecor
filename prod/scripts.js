@@ -534,11 +534,11 @@ var _textLinesRevealJs = require("../js/textLinesReveal.js");
 var _textRevealJs = require("../js/textReveal.js");
 var _utilsJs = require("../js/utils.js");
 var _contentItemJs = require("../js/contentItem.js");
-var _customizerJs = require("../js/customizer.js");
+// import "../js/customizer.js";
 // import "../js/navigation.js";
 var _funcionesJs = require("../js/funciones.js");
 
-},{"../sass/style.scss":"jgbRe","../js/grid.js":"gXF4X","../js/imageCell.js":"fhDXr","../js/index.js":"1Z4Rq","../js/textLinesReveal.js":"lOIuT","../js/textReveal.js":"ar34e","../js/utils.js":"eYK4L","../js/contentItem.js":"7VNk8","../js/customizer.js":"9Nfok","../js/funciones.js":"3FYkg"}],"jgbRe":[function() {},{}],"gXF4X":[function(require,module,exports) {
+},{"../sass/style.scss":"jgbRe","../js/grid.js":"gXF4X","../js/imageCell.js":"fhDXr","../js/index.js":"1Z4Rq","../js/textLinesReveal.js":"lOIuT","../js/textReveal.js":"ar34e","../js/utils.js":"eYK4L","../js/contentItem.js":"7VNk8","../js/funciones.js":"3FYkg"}],"jgbRe":[function() {},{}],"gXF4X":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 /**
@@ -6182,46 +6182,7 @@ new _grid.Grid(document.querySelector('.grid--large'));
 _utils.preloadImages('.grid__cell-img-inner, .slide-nav__img').then(()=>document.body.classList.remove('loading')
 );
 
-},{"./utils":"eYK4L","./grid":"gXF4X"}],"9Nfok":[function(require,module,exports) {
-/* global wp, jQuery */ /**
- * File customizer.js.
- *
- * Theme Customizer enhancements for a better user experience.
- *
- * Contains handlers to make Theme Customizer preview reload changes asynchronously.
- */ (function($) {
-    // Site title and description.
-    wp.customize('blogname', function(value) {
-        value.bind(function(to) {
-            $('.site-title a').text(to);
-        });
-    });
-    wp.customize('blogdescription', function(value) {
-        value.bind(function(to) {
-            $('.site-description').text(to);
-        });
-    });
-    // Header text color.
-    wp.customize('header_textcolor', function(value) {
-        value.bind(function(to) {
-            if ('blank' === to) $('.site-title, .site-description').css({
-                clip: 'rect(1px, 1px, 1px, 1px)',
-                position: 'absolute'
-            });
-            else {
-                $('.site-title, .site-description').css({
-                    clip: 'auto',
-                    position: 'relative'
-                });
-                $('.site-title a, .site-description').css({
-                    color: to
-                });
-            }
-        });
-    });
-})(jQuery);
-
-},{}],"3FYkg":[function(require,module,exports) {
+},{"./utils":"eYK4L","./grid":"gXF4X"}],"3FYkg":[function(require,module,exports) {
 
 },{}]},["37P0W","2hpjx"], "2hpjx", "parcelRequireede1")
 

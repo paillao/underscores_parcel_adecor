@@ -288,6 +288,11 @@ a:focus-visible {
   // width: 100px;
   // border-radius: 20px;
   font-size: 1.4rem;
+  @media #{$tablet} {
+  }
+  @media #{$mobile} {
+    font-size: 1rem;
+  }
 }
 
 .slide-nav {

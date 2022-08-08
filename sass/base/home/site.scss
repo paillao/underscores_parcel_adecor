@@ -2,8 +2,8 @@
   .site {
     padding: 8vh;
     .site-header {
-      display: flex;
-      margin-bottom: 40px;
+      // display: flex;
+      // margin-bottom: 40px;
       .site-branding {
         a {
           margin-right: 40px;
@@ -46,11 +46,11 @@
 }
 .home {
   main {
-    height: 90vh;
+    height: 100vh;
   }
   .site-footer {
     height: 10vh;
-    padding: 0vw 8vw;
+    padding: 0vw 0vw;
     display: flex;
     align-items: center;
     justify-content: flex-end;

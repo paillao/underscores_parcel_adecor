@@ -7,7 +7,7 @@ import "../js/textLinesReveal.js";
 import "../js/textReveal.js";
 import "../js/utils.js";
 import "../js/contentItem.js";
-import "../js/customizer.js";
 
+// import "../js/customizer.js";
 // import "../js/navigation.js";
 import "../js/funciones.js";

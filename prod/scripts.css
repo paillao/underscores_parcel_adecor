@@ -601,6 +601,12 @@ a:focus-visible {
   font-size: 1.4rem;
 }
 
+@media (max-width: 767px) {
+  .content__item-link {
+    font-size: 1rem;
+  }
+}
+
 .slide-nav {
   width: 40%;
   height: 100%;
@@ -793,11 +799,6 @@ a:focus-visible {
   padding: 8vh;
 }
 
-.page .site .site-header {
-  margin-bottom: 40px;
-  display: flex;
-}
-
 .page .site .site-header .site-branding a {
   margin-right: 40px;
 }
@@ -837,14 +838,14 @@ a:focus-visible {
 }
 
 .home main {
-  height: 90vh;
+  height: 100vh;
 }
 
 .home .site-footer {
   height: 10vh;
   justify-content: flex-end;
   align-items: center;
-  padding: 0 8vw;
+  padding: 0;
   display: flex;
 }
 
