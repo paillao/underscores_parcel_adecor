@@ -38,7 +38,7 @@
 		<p><?php esc_html_e("Disculpa, aún no hay items de este tipo"); ?></p>
 		<?php endif; ?>
 		
-		<?php $args = ["p" => 19, "post_type" => "any"]; $the_query = new WP_Query($args); if
+	<?php $args = ["p" => 19, "post_type" => "any"]; $the_query = new WP_Query($args); if
 		($the_query->have_posts()): while ($the_query->have_posts()):
 		$the_query->the_post(); $feat_image_url = wp_get_attachment_url(
 		get_post_thumbnail_id() ); ?>
@@ -54,7 +54,7 @@
 		<p><?php esc_html_e("Disculpa, aún no hay items de este tipo"); ?></p>
 		<?php endif; ?>
 		
-		<?php $args = ["p" => 21, "post_type" => "any"]; $the_query = new WP_Query($args); if
+	<?php $args = ["p" => 21, "post_type" => "any"]; $the_query = new WP_Query($args); if
 		($the_query->have_posts()): while ($the_query->have_posts()):
 		$the_query->the_post(); $feat_image_url = wp_get_attachment_url(
 		get_post_thumbnail_id() ); ?>
@@ -70,7 +70,7 @@
 		<p><?php esc_html_e("Disculpa, aún no hay items de este tipo"); ?></p>
 		<?php endif; ?>
 		
-		<?php $args = ["p" => 28, "post_type" => "any"]; $the_query = new WP_Query($args); if
+	<?php $args = ["p" => 28, "post_type" => "any"]; $the_query = new WP_Query($args); if
 		($the_query->have_posts()): while ($the_query->have_posts()):
 		$the_query->the_post(); $feat_image_url = wp_get_attachment_url(
 		get_post_thumbnail_id() ); ?>
@@ -86,7 +86,7 @@
 		<p><?php esc_html_e("Disculpa, aún no hay items de este tipo"); ?></p>
 		<?php endif; ?>
 		
-		<?php $args = ["p" => 30, "post_type" => "any"]; $the_query = new WP_Query($args); if
+	<?php $args = ["p" => 30, "post_type" => "any"]; $the_query = new WP_Query($args); if
 		($the_query->have_posts()): while ($the_query->have_posts()):
 		$the_query->the_post(); $feat_image_url = wp_get_attachment_url(
 		get_post_thumbnail_id() ); ?>
@@ -102,9 +102,7 @@
 		<p><?php esc_html_e("Disculpa, aún no hay items de este tipo"); ?></p>
 		<?php endif; ?>
 
-
-
-		<?php $args = ["p" => 64, "post_type" => "any"]; $the_query = new WP_Query($args); if
+	<?php $args = ["p" => 32, "post_type" => "any"]; $the_query = new WP_Query($args); if
 		($the_query->have_posts()): while ($the_query->have_posts()):
 		$the_query->the_post(); $feat_image_url = wp_get_attachment_url(
 		get_post_thumbnail_id() ); ?>
@@ -119,17 +117,15 @@
 		<?php else: ?>
 		<p><?php esc_html_e("Disculpa, aún no hay items de este tipo"); ?></p>
 		<?php endif; ?>
-
-
 		
-		<?php $args = ["p" => 32, "post_type" => "any"]; $the_query = new WP_Query($args); if
+	<?php $args = ["p" => 64, "post_type" => "any"]; $the_query = new WP_Query($args); if
 		($the_query->have_posts()): while ($the_query->have_posts()):
 		$the_query->the_post(); $feat_image_url = wp_get_attachment_url(
 		get_post_thumbnail_id() ); ?>
 		
 		<div class="grid__cell grid__cell-c3-r2">
 		  <div class="grid__cell-img">
-			<div class="grid__cell-img-inner" style="background-image: url(<?php echo $feat_image_url; ?>)" data-item="item-6"></div>
+			<div class="grid__cell-img-inner" style="background-image: url(<?php echo $feat_image_url; ?>)" data-item="item-7"></div>
 		  </div>
 		</div>
 		<?php endwhile; ?>
@@ -297,44 +293,7 @@
 			<p><?php esc_html_e("Disculpa, aún no hay items de este tipo"); ?></p>
 		<?php endif; ?>  		
 	
-	
-	
-	
-	
-	<?php $args = ["p" => 64, "post_type" => "any"]; $the_query = new WP_Query($args);
-	if ($the_query->have_posts()):
-		while ($the_query->have_posts()):
-			$the_query->the_post(); $feat_image_url = wp_get_attachment_url( get_post_thumbnail_id() ); ?>
-		   <div class="content__item" id="item-6">
-				<span class="content__item-number oh"><span class="oh__inner">06</span></span>
-				<h2 class="content__item-heading oh">
-				  <span class="oh__inner"><?php echo wp_strip_all_tags( the_title() ); ?>
-				  <br/><span class="estracto"><?php echo wp_strip_all_tags( the_excerpt() );?></span>
-				  </span>
-				</h2>
-				<p class="content__item-text">
-				<?php echo wp_strip_all_tags( get_the_content() ); ?>
-				</p>
-				 <a class="content__item-link oh" href="<?php bloginfo( 'url' ) ?>/cotizar"><span class="oh__inner"><i class="fa-solid fa-paper-plane"></i> Cotizar</span></a>
-	
-				<nav class="slide-nav">
-				  <div class="slide-nav__img slide-nav__img--prev" style="background-image: url(<?php echo $feat_image_url; ?>)"></div>
-				  <div class="slide-nav__img slide-nav__img--next" style="background-image: url(<?php echo $feat_image_url; ?>)"></div>
-				</nav>
-			  </div>
-	<?php endwhile; ?>
-	<?php wp_reset_postdata(); ?>
-	<?php else: ?>
-		<p><?php esc_html_e("Disculpa, aún no hay items de este tipo"); ?></p>
-	<?php endif; ?>  		
-	
-	
-	
-	
-	
-	
-		
-		<?php $args = ["p" => 32, "post_type" => "any"]; $the_query = new WP_Query($args);
+	<?php $args = ["p" => 32, "post_type" => "any"]; $the_query = new WP_Query($args);
 		if ($the_query->have_posts()):
 			while ($the_query->have_posts()):
 				$the_query->the_post(); $feat_image_url = wp_get_attachment_url( get_post_thumbnail_id() ); ?>
@@ -359,7 +318,34 @@
 		<?php wp_reset_postdata(); ?>
 		<?php else: ?>
 			<p><?php esc_html_e("Disculpa, aún no hay items de este tipo"); ?></p>
-		<?php endif; ?>  		
+		<?php endif; ?> 
+		
+	<?php $args = ["p" => 64, "post_type" => "any"]; $the_query = new WP_Query($args);
+		if ($the_query->have_posts()):
+			while ($the_query->have_posts()):
+				$the_query->the_post(); $feat_image_url = wp_get_attachment_url( get_post_thumbnail_id() ); ?>
+			   <div class="content__item" id="item-7">
+					<span class="content__item-number oh"><span class="oh__inner">07</span></span>
+					<h2 class="content__item-heading oh">
+					  <span class="oh__inner"><?php echo wp_strip_all_tags( the_title() ); ?>
+					  <br/><span class="estracto"><?php echo wp_strip_all_tags( the_excerpt() );?></span>
+					  </span>
+					</h2>
+					<p class="content__item-text">
+					<?php echo wp_strip_all_tags( get_the_content() ); ?>
+					</p>
+					 <a class="content__item-link oh" href="<?php bloginfo( 'url' ) ?>/cotizar"><span class="oh__inner"><i class="fa-solid fa-paper-plane"></i> Cotizar</span></a>
+		
+					<nav class="slide-nav">
+					  <div class="slide-nav__img slide-nav__img--prev" style="background-image: url(<?php echo $feat_image_url; ?>)"></div>
+					  <div class="slide-nav__img slide-nav__img--next" style="background-image: url(<?php echo $feat_image_url; ?>)"></div>
+					</nav>
+				  </div>
+		<?php endwhile; ?>
+		<?php wp_reset_postdata(); ?>
+		<?php else: ?>
+			<p><?php esc_html_e("Disculpa, aún no hay items de este tipo"); ?></p>
+		<?php endif; ?>  		 		
 		
 			<button class="back">
 			  <h4>Inicio</h4>
@@ -439,7 +425,7 @@
 				<p><?php esc_html_e("Disculpa, aún no hay items de este tipo"); ?></p>
 			<?php endif; ?>  	
 			
-			<?php $args = ["p" => 64, "post_type" => "any"]; $the_query = new WP_Query($args);
+			<?php $args = ["p" => 32, "post_type" => "any"]; $the_query = new WP_Query($args);
 			if ($the_query->have_posts()): while ($the_query->have_posts()): $the_query->the_post(); 
 				$feat_image_url = wp_get_attachment_url( get_post_thumbnail_id()); ?>		
 				<div class="grid__cell grid__cell-c2-r2">
@@ -451,23 +437,21 @@
 				<?php wp_reset_postdata(); ?>
 			<?php else: ?>
 				<p><?php esc_html_e("Disculpa, aún no hay items de este tipo"); ?></p>
-			<?php endif; ?>  			  		  
-			
-			<?php $args = ["p" => 32, "post_type" => "any"]; $the_query = new WP_Query($args);
-			if ($the_query->have_posts()): while ($the_query->have_posts()): $the_query->the_post(); 
-				$feat_image_url = wp_get_attachment_url( get_post_thumbnail_id()); ?>		
-				<div class="grid__cell grid__cell-c3-r2">
-					<div class="grid__cell-img">
-						<div class="grid__cell-img-inner" style="background-image: url(<?php echo $feat_image_url; ?>)"></div>
-					</div>
-				 </div> 
-			<?php endwhile; ?>
-				<?php wp_reset_postdata(); ?>
-			<?php else: ?>
-				<p><?php esc_html_e("Disculpa, aún no hay items de este tipo"); ?></p>
 			<?php endif; ?>  			  
 		
-		
+		<?php $args = ["p" => 64, "post_type" => "any"]; $the_query = new WP_Query($args);
+		if ($the_query->have_posts()): while ($the_query->have_posts()): $the_query->the_post(); 
+			$feat_image_url = wp_get_attachment_url( get_post_thumbnail_id()); ?>		
+			<div class="grid__cell grid__cell-c3-r2">
+				<div class="grid__cell-img">
+					<div class="grid__cell-img-inner" style="background-image: url(<?php echo $feat_image_url; ?>)"></div>
+				</div>
+			 </div> 
+		<?php endwhile; ?>
+			<?php wp_reset_postdata(); ?>
+		<?php else: ?>
+			<p><?php esc_html_e("Disculpa, aún no hay items de este tipo"); ?></p>
+		<?php endif; ?>  			  		 
 			
 			</nav>
 		  </div>

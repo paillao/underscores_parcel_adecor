@@ -28,7 +28,7 @@ body {
 /* Page Loader */
 .js .loading::before,
 .js .loading::after {
-  content: "";
+  content: '';
   position: fixed;
   z-index: 1000;
 }
@@ -255,7 +255,7 @@ a:focus-visible {
 .content__item-heading {
   font-size: 4vw;
   line-height: 1;
-  margin: 1rem 0 3rem 0;
+  margin: 1rem 0 1rem 0;
   font-weight: 600;
   .estracto {
     display: none;
@@ -455,7 +455,7 @@ a:focus-visible {
 
   body #cdawrap .cda-text::before {
     color: var(--color-text);
-    content: "Sponsored by " attr(data-sponsor);
+    content: 'Sponsored by ' attr(data-sponsor);
     font-size: 0.85rem;
     font-weight: 500;
     left: 0;
@@ -466,7 +466,7 @@ a:focus-visible {
     transition: opacity 0.4s;
   }
 
-  .grid[style*="pointer-events: none;"] .frame #cdawrap .cda-text::before {
+  .grid[style*='pointer-events: none;'] .frame #cdawrap .cda-text::before {
     opacity: 0 !important;
   }
 

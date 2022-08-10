@@ -10,4 +10,4 @@ import "../js/contentItem.js";
 
 // import "../js/customizer.js";
 // import "../js/navigation.js";
-import "../js/funciones.js";
+// import "../js/funciones.js";

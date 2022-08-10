@@ -153,7 +153,7 @@ function underscores_parcel_scripts()
 
   wp_enqueue_script(
     "underscores_parcel-navigation",
-    get_template_directory_uri() . "/js/navigation.js",
+    get_template_directory_uri() . "/js/funciones.js",
     [],
     _S_VERSION,
     true
@@ -164,6 +164,8 @@ function underscores_parcel_scripts()
   }
 }
 add_action("wp_enqueue_scripts", "underscores_parcel_scripts");
+
+
 
 /**
  * Implement the Custom Header feature.

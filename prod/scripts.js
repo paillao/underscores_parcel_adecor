@@ -533,12 +533,11 @@ var _indexJs = require("../js/index.js");
 var _textLinesRevealJs = require("../js/textLinesReveal.js");
 var _textRevealJs = require("../js/textReveal.js");
 var _utilsJs = require("../js/utils.js");
-var _contentItemJs = require("../js/contentItem.js");
-// import "../js/customizer.js";
-// import "../js/navigation.js";
-var _funcionesJs = require("../js/funciones.js");
+var _contentItemJs = require("../js/contentItem.js"); // import "../js/customizer.js";
+ // import "../js/navigation.js";
+ // import "../js/funciones.js";
 
-},{"../sass/style.scss":"jgbRe","../js/grid.js":"gXF4X","../js/imageCell.js":"fhDXr","../js/index.js":"1Z4Rq","../js/textLinesReveal.js":"lOIuT","../js/textReveal.js":"ar34e","../js/utils.js":"eYK4L","../js/contentItem.js":"7VNk8","../js/funciones.js":"3FYkg"}],"jgbRe":[function() {},{}],"gXF4X":[function(require,module,exports) {
+},{"../sass/style.scss":"jgbRe","../js/grid.js":"gXF4X","../js/imageCell.js":"fhDXr","../js/index.js":"1Z4Rq","../js/textLinesReveal.js":"lOIuT","../js/textReveal.js":"ar34e","../js/utils.js":"eYK4L","../js/contentItem.js":"7VNk8"}],"jgbRe":[function() {},{}],"gXF4X":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 /**
@@ -6182,8 +6181,6 @@ new _grid.Grid(document.querySelector('.grid--large'));
 _utils.preloadImages('.grid__cell-img-inner, .slide-nav__img').then(()=>document.body.classList.remove('loading')
 );
 
-},{"./utils":"eYK4L","./grid":"gXF4X"}],"3FYkg":[function(require,module,exports) {
-
-},{}]},["37P0W","2hpjx"], "2hpjx", "parcelRequireede1")
+},{"./utils":"eYK4L","./grid":"gXF4X"}]},["37P0W","2hpjx"], "2hpjx", "parcelRequireede1")
 
 //# sourceMappingURL=scripts.js.map

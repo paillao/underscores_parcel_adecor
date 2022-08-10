@@ -42,6 +42,7 @@
 				?>
 				<p class="site-description"><?php echo $underscores_parcel_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
 			<?php endif; ?>
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><span>Menu</span></button>
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation navigation-pages">
